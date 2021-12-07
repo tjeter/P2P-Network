@@ -56,16 +56,16 @@ public class RequestHandler
 
 	public static boolean clientNeedsThisPiece(int pieceIndex) 
 	{
-        if(Bitfield.clientHasThisPiece(pieceIndex))
-        {
+        	if(Bitfield.clientHasThisPiece(pieceIndex))
+        	{
 			return false;
-        }
+        	}
 		if(piecesWeHaveAlreadyRequested.get(pieceIndex))
 		{
 			return false;
 		}
 		return true;
-    }
+    	}
 
 	public static byte[] constructRequestMessageAndChooseRandomPiece(int peerID) 
 	{
