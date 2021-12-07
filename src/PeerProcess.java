@@ -38,7 +38,7 @@ public class PeerProcess
         startServer();
         try 
         {
-        	//Sleep here because all servers start in parallel and need time before connecting to each other
+            //Sleep here because all servers start in parallel and need time before connecting to each other
             Thread.sleep(15000);     
         } 
         catch(InterruptedException e2) 
@@ -121,7 +121,7 @@ public class PeerProcess
     {
         Logger.logChangedPreferredNeighbors(preferredNeighbors);
 
-		List<Integer> peerIDList = getPeerIDList();
+	List<Integer> peerIDList = getPeerIDList();
 
         for(Integer peerID : peerIDList) 
         {
