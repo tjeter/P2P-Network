@@ -1,6 +1,12 @@
 # P2P-Network
 This is the setup for a Peer-to-Peer Network similar to BitTorrent. BitTorrent is a popular Peer-to-Peer protocol for file distribution. Among its interesting features, we are asked to implement the choking/unchoking mechanism which is one of the most important features of BitTorrent.
 
+Contributors:
+-------------
+Ranger Chenore (@rango3526)
+David Baker (@dbuf21)
+Tre' Jeter (@tjeter)
+
 Working:
 --------
 All requirements for the project are satisified. There is a script to start up all peer processes on the different machines and make the TCP connections. Pieces are exchanged as described in the protocol. The peers keep running after receiving the file until all peers have the full file. All actions happening on each peer while the program is running are logged in their own log files and debug log files. The services stop upon completion.
