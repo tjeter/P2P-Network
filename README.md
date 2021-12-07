@@ -13,7 +13,7 @@ Video Demonstration:
 --------------------
 https://uflorida-my.sharepoint.com/:v:/g/personal/rangerchenore_ufl_edu/EZUodMI50K5ApDIKDV_waW0BH-_yRhSukzzmbCljjjrL_w?e=QFt1hM
 
-============================================================================================
+===========================================================================
 
 (Change [insert_your_own_path] to the path to files on your own machine and [username] to your GatorLink username)
 
@@ -33,7 +33,7 @@ Securely Re-Copy Class Files:
 -----------------------------
 scp '[insert_your_own_path]\StartRemotePeers.class' '[insert_your_own_path]\StartRemotePeers$1.class' '[insert_your_own_path]\StartRemotePeers$PeerInfo.class' [username]@lin114-01.cise.ufl.edu:~
 
-============================================================================================
+===========================================================================
 
 For remote Linux machine (Thunder)
 
