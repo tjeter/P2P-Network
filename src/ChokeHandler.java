@@ -48,13 +48,13 @@ public class ChokeHandler
 		if(!choke) 
 		{
         	chokeMessage = ActualMessageHandler.addHeader(message, ActualMessageHandler.UNCHOKE);
-        }
-        else 
-        {
-        	chokeMessage = ActualMessageHandler.addHeader(message, ActualMessageHandler.CHOKE);
-        }
+        	}
+        	else 
+        	{
+        		chokeMessage = ActualMessageHandler.addHeader(message, ActualMessageHandler.CHOKE);
+        	}
 		return chokeMessage;
-    }
+    	}
 
 	public static synchronized boolean chokePeer(int peerID) 
 	{
