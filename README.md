@@ -1,11 +1,9 @@
 # P2P-Network
 This is the setup for a Peer-to-Peer Network similar to BitTorrent. BitTorrent is a popular Peer-to-Peer protocol for file distribution. Among its interesting features, we are asked to implement the choking/unchoking mechanism which is one of the most important features of BitTorrent.
 
-Contributors:
--------------
-Ranger Chenore (@rango3526)
-David Baker (@dbuf21)
-Tre' Jeter (@tjeter)
+Contributors and Github Profiles:
+---------------------------------
+Ranger Chenore (@rango3526), David Baker (@dbuf21), Tre' Jeter (@tjeter)
 
 Working:
 --------
