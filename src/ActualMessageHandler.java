@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 
 public class ActualMessageHandler 
 {
-    public static final int CHOKE = 0;
+	public static final int CHOKE = 0;
 	public static final int UNCHOKE = 1;
 	public static final int INTERESTED = 2;
 	public static final int UNINTERESTED = 3;
@@ -17,11 +17,11 @@ public class ActualMessageHandler
     public static byte[] extractPayload(byte[] fullMessage) 
     {
         ByteBuffer bytearray = ByteBuffer.wrap(fullMessage);
-		byte[] msglengthbytes = new byte[4];
+	byte[] msglengthbytes = new byte[4];
         bytearray = bytearray.get(msglengthbytes, 0, msglengthbytes.length);
         int msgLengthInt = byteArrayToInt(msglengthbytes);
         bytearray = bytearray.get(new byte[1], 0, 1);
-        if (msgLengthInt == 1) 
+        if(msgLengthInt == 1) 
         {
             byte [] msgpayloadbytes = new byte[0];
             return msgpayloadbytes;
@@ -61,14 +61,14 @@ public class ActualMessageHandler
     	ByteArrayOutputStream stream = new ByteArrayOutputStream();
     	try 
     	{
-			stream.write(newLength);
-			stream.write(newMessageType);
+		stream.write(newLength);
+		stream.write(newMessageType);
 	    	stream.write(messagePayload);
-		} 
+	} 
     	catch(IOException e) 
     	{
-			e.printStackTrace();
-		}
+		e.printStackTrace();
+	}
     	byte [] combined = stream.toByteArray();
     	return (combined);
     }
@@ -81,11 +81,11 @@ public class ActualMessageHandler
     public static int getMsgType(byte[] fullMessage) 
     {
         ByteBuffer byteBuffer = ByteBuffer.wrap(fullMessage);
-		byte[] msglengthbytes = new byte[4];
+	byte[] msglengthbytes = new byte[4];
     	byte[] msgtypebytes = new byte[1];
         byteBuffer = byteBuffer.get(msglengthbytes, 0, msglengthbytes.length);
         byteBuffer = byteBuffer.get(msgtypebytes, 0, 1);
         int type = byteArrayToInt(msgtypebytes);
-		return type;
+	return type;
     }
 }
