@@ -8,7 +8,7 @@ import java.nio.*;
 
 public class ConfigReader 
 {
-	//static String pathToPeerInfoCfg = "./config/PeerInfo.cfg";
+     //static String pathToPeerInfoCfg = "./config/PeerInfo.cfg";
     //static String pathToCommonCfg = "./config/Common.cfg";
 	
     static String pathToPeerInfoCfg = "C:/Users/Tre' Jeter/Desktop/Java Projects/Projects/Peer-To-Peer Network/src/PeerInfo.cfg";
