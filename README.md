@@ -12,6 +12,7 @@ On occasion, one of the peers loses connection to the rest, throwing SocketExcep
 Video Demonstration:
 --------------------
 https://uflorida-my.sharepoint.com/:v:/g/personal/rangerchenore_ufl_edu/EZUodMI50K5ApDIKDV_waW0BH-_yRhSukzzmbCljjjrL_w?e=QFt1hM
+
 ============================================================================================
 
 (Change [insert_your_own_path] to the path to files on your own machine and [username] to your GatorLink username)
